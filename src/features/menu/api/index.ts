@@ -1,5 +1,5 @@
 import { supabase } from "../../../config/supabaseClient";
-import { ProdukJadi } from "../types";
+import type { ProdukJadi } from "../types";
 
 type ProdukJadiDTO = Omit<ProdukJadi, "id" | "created_at">;
 
@@ -72,7 +72,12 @@ export const getResepForProduk = async (
     .eq("produk_jadi_id", produkId);
 
   if (error) throw new Error(error.message);
-  return data || [];
+  return (data || []).map((item) => ({
+    ...item,
+    BahanBaku: Array.isArray(item.BahanBaku)
+      ? item.BahanBaku[0]
+      : item.BahanBaku,
+  }));
 };
 
 export const addBahanToResep = async (item: {

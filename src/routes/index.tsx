@@ -1,7 +1,6 @@
 // src/routes/index.tsx
 import { Routes, Route } from "react-router-dom";
 import MainLayout from "../components/layout/MainLayout";
-import { Heading } from "@chakra-ui/react";
 import InventoryPage from "../features/inventory/pages/InventoryPage"; // Import baru
 import ProdukPage from "../features/menu/pages/ProdukPage";
 import PosPage from "../features/pos/pages/PosPage";
@@ -10,9 +9,6 @@ import PurchaseOrderListPage from "../features/procurement/pages/PurchaseOrderLi
 import CreatePurchaseOrderPage from "../features/procurement/pages/CreatePurchaseOrderPage";
 import PurchaseOrderDetailPage from "../features/procurement/pages/PurchaseOrderDetailPage";
 import DashboardPage from "../features/dashboard/pages/DashboardPage";
-// Halaman Dummy lainnya
-const DashboardPage = () => <Heading>Dashboard</Heading>;
-// ...
 
 export const AppRoutes = () => {
   return (

@@ -6,7 +6,6 @@ import {
   Table,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
@@ -21,7 +20,8 @@ const getProfitabilityReport = async () => {
   const { data, error } = await supabase.functions.invoke(
     "calculate-profitability"
   );
-  if (error) throw new Error(await error.context.json().then((d) => d.error));
+  if (error)
+    throw new Error(await error.context.json().then((d: any) => d.error));
   return data;
 };
 

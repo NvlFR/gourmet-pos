@@ -16,10 +16,10 @@ const navItems = [
   { icon: LuPackage, label: "Inventaris", path: "/inventory" },
   { icon: LuShoppingCart, label: "Kasir (POS)", path: "/pos" },
   { icon: LuClipboardList, label: "Pembelian (PO)", path: "/procurement" },
-  { icon: LuBookMarked, label: 'Menu & Resep', path: '/menu' }
-  { icon: LuShoppingCart, label: 'Kasir (POS)', path: '/pos' }
+  { icon: LuBookMarked, label: "Menu & Resep", path: "/menu" },
+  { icon: LuShoppingCart, label: "Kasir (POS)", path: "/pos" },
   { icon: LuChefHat, label: "Dapur (KDS)", path: "/kds" },
-  { icon: LuClipboardList, label: 'Pembelian', path: '/procurement' },
+  { icon: LuClipboardList, label: "Pembelian", path: "/procurement" },
 ];
 
 // npx supabase link --project-ref imjpfxcklfiwyqwyhewv

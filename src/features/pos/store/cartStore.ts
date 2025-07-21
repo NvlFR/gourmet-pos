@@ -1,6 +1,6 @@
 // src/features/pos/store/cartStore.ts
 import { create } from "zustand";
-import { ProdukJadi } from "../../menu/types";
+import type { ProdukJadi } from "../../menu/types";
 
 export interface CartItem extends ProdukJadi {
   quantity: number;

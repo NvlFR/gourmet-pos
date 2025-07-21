@@ -28,7 +28,7 @@ const getPurchaseOrders = async () => {
             tanggal_po,
             status,
             total_harga_beli,
-            Supplier ( nama_supplier )
+            Supplier!inner ( nama_supplier )
         `
     )
     .order("created_at", { ascending: false });
@@ -82,7 +82,7 @@ const PurchaseOrderListPage = () => {
               {data?.map((po) => (
                 <Tr key={po.id}>
                   <Td>{new Date(po.tanggal_po).toLocaleDateString("id-ID")}</Td>
-                  <Td>{po.Supplier?.nama_supplier}</Td>
+                  <Td>{po.Supplier?.[0]?.nama_supplier}</Td>
                   <Td>
                     <Tag colorScheme={getStatusColor(po.status)}>
                       {po.status}

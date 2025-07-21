@@ -32,7 +32,7 @@ import {
   deleteBahanBaku,
 } from "../api";
 import { BahanBakuForm } from "../components/BahanBakuForm";
-import { BahanBaku } from "../types";
+import type { BahanBaku } from "../types";
 import { useState, useRef } from "react";
 
 const InventoryPage = () => {

@@ -24,7 +24,7 @@ import {
 import { useEffect } from "react";
 import { useForm } from "react-hook-form";
 // --- Ganti Import Tipe dan Komponen ---
-import { ProdukJadi } from "../types";
+import type { ProdukJadi } from "../types";
 import ResepManager from "./ResepManager";
 
 // --- Ganti Definisi Tipe dan Props ---

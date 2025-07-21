@@ -1,5 +1,5 @@
 import { supabase } from "../../../config/supabaseClient";
-import { Supplier } from "../types";
+import type { Supplier } from "../types";
 
 type SupplierDTO = Omit<Supplier, "id" | "created_at">;
 

@@ -1,0 +1,33 @@
+
+[functions.proses-pesanan]
+enabled = true
+verify_jwt = true
+import_map = "./functions/proses-pesanan/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/proses-pesanan/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/proses-pesanan/*.html" ]
+
+[functions.create-purchase-order]
+enabled = true
+verify_jwt = true
+import_map = "./functions/create-purchase-order/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/create-purchase-order/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/create-purchase-order/*.html" ]
+
+[functions.get-sales-report]
+enabled = true
+verify_jwt = true
+import_map = "./functions/get-sales-report/deno.json"
+# Uncomment to specify a custom file path to the entrypoint.
+# Supported file extensions are: .ts, .js, .mjs, .jsx, .tsx
+entrypoint = "./functions/get-sales-report/index.ts"
+# Specifies static files to be bundled with the function. Supports glob patterns.
+# For example, if you want to serve static HTML pages in your function:
+# static_files = [ "./functions/get-sales-report/*.html" ]

@@ -19,7 +19,7 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useForm } from "react-hook-form";
-import { BahanBaku } from "../types";
+import type { BahanBaku } from "../types";
 import { useEffect } from "react";
 
 type BahanBakuFormData = Omit<BahanBaku, "id" | "created_at">;

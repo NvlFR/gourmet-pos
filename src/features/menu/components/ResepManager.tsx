@@ -20,7 +20,8 @@ import {
   VStack,
 } from "@chakra-ui/react";
 import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
-import { useForm, SubmitHandler } from "react-hook-form";
+import { useForm } from "react-hook-form";
+import type { SubmitHandler } from "react-hook-form";
 import { LuTrash2 } from "react-icons/lu";
 import { getBahanBaku } from "../../inventory/api";
 import {

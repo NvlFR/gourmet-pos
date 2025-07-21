@@ -1,6 +1,6 @@
 // src/features/inventory/api/index.ts
 import { supabase } from "../../../config/supabaseClient";
-import { BahanBaku } from "../types";
+import type { BahanBaku } from "../types";
 
 export const getBahanBaku = async (): Promise<BahanBaku[]> => {
   const { data, error } = await supabase

@@ -17,7 +17,6 @@ import {
   Table,
   Tbody,
   Td,
-  Text,
   Th,
   Thead,
   Tr,
@@ -35,7 +34,7 @@ import {
   updateProdukJadi,
 } from "../api";
 import { ProdukForm } from "../components/ProdukForm"; // Pastikan Anda sudah membuat file ini
-import { ProdukJadi } from "../types";
+import type { ProdukJadi } from "../types";
 
 const ProdukPage = () => {
   const {
